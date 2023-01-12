@@ -64,8 +64,9 @@ const Blog = () => {
                   <p>{desc}</p>
                 </div>
                 <a href="#" className="flex">
-                  <BsArrowRightShort className="icon"/>?
+
                   Read More
+                  <BsArrowRightShort className="icon"/>
                 </a>
            </div>
               )
