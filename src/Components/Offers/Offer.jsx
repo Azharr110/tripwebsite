@@ -4,6 +4,8 @@ import {MdKingBed, MdBathtub, MdAirportShuttle, MdLocationOn} from 'react-icons/
 import {FaWifi} from 'react-icons/fa'
 import {BsArrowRightShort} from 'react-icons/bs'
 
+import img from '../../Assets/image6.jpg'
+
 const Offer = () => {
   return (
     <section className='offer container section'>
@@ -20,7 +22,7 @@ const Offer = () => {
         <div className="mainContent grid">
            <div className="singleOffer">
               <div className="destImage">
-                <img src="" alt="Image Name" />
+                <img src={ img } alt="Image Name" />
 
                 <span className="discount">
                   30% Off
