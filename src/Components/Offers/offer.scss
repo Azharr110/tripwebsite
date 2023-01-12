@@ -106,9 +106,13 @@
 
                         .icon{
                             color: var(--whiteColor);
-                            
+
                         }
                     }
+                }
+
+                &:hover{
+                     transform: translateY(-7px);
                 }
             }
         }
