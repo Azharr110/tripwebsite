@@ -4,7 +4,43 @@ import {MdKingBed, MdBathtub, MdAirportShuttle, MdLocationOn} from 'react-icons/
 import {FaWifi} from 'react-icons/fa'
 import {BsArrowRightShort} from 'react-icons/bs'
 
-import img from '../../Assets/image6.jpg'
+import img6 from '../../Assets/image6.jpg'
+import img8 from '../../Assets/image8.jpg'
+import img9 from '../../Assets/image9.jpg'
+import img15 from '../../Assets/image15.jpg'
+
+
+const Offers =[
+  {
+    id:1,
+    imgSrc: img6,
+    destTitle: 'Manali',
+    location: 'India',
+    price: '$4,400',
+  },
+  {
+    id:2,
+    imgSrc: img8,
+    destTitle: 'Machu Picchu',
+    location: 'Peru',
+    price: '$6,400',
+  },
+  {
+    id:3,
+    imgSrc: img9,
+    destTitle: 'Guanajauto',
+    location: 'Mexico',
+    price: '$7,400',
+  },
+  {
+    id:4,
+    imgSrc: img15,
+    destTitle: 'Angkor Wat',
+    location: 'Cambodia',
+    price: '$5,400',
+  },
+]
+
 
 const Offer = () => {
   return (
@@ -20,9 +56,12 @@ const Offer = () => {
         </div>
 
         <div className="mainContent grid">
-           <div className="singleOffer">
+           {
+            Offers.map(({id, imgSrc,destTitle, location, price })=>{
+              return(
+                <div className="singleOffer">
               <div className="destImage">
-                <img src={ img } alt="Image Name" />
+                <img src={ imgSrc } alt={destTitle} />
 
                 <span className="discount">
                   30% Off
@@ -32,7 +71,7 @@ const Offer = () => {
               <div className="offerBody">
                 <div className="price flex">
                   <h4>
-                    $1000
+                    {price}
                   </h4>
                    <span className="status">
                     For Rent
@@ -60,14 +99,17 @@ const Offer = () => {
 
                 <div className="location flex">
                    <MdLocationOn className="icon"/>
-                   <small>Sector-1 #310, Manali</small>
+                   <small>Sector-1  #310, {location}</small>
                 </div>
                 <button className='btn flex'>
                   View Details
                   <BsArrowRightShort className="icon"/>
                 </button>
               </div>
-           </div>
+               </div>
+              )
+            })
+           }
         </div>
       </div>
     </section>
