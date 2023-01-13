@@ -68,6 +68,10 @@ li{
     font-weight: 500;
 }
 
+.btn:hover{
+    background: var(--HoverColor);
+}
+
 .btn:hover a{
     color: var(--whiteColor);
 }
