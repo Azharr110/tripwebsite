@@ -51,6 +51,33 @@ const Footer = () => {
             </a>
           </li>
          </div>
+
+
+         <div className="footerLinks">
+          <span className="linkTitle">
+            Helpful Links
+          </span>
+          <li>
+            <a href="#">
+              Destination
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Support
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Travel & Condition
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Privacy
+            </a>
+          </li>
+         </div>
          <div className="footerLinks">
           <span className="linkTitle">
             Contact Us
