@@ -36,12 +36,12 @@ useEffect(()=>{
         </div>
 
         <div data-aos="fade-right" data-aos-duration="2500" className="distDiv">
-          <label htmlFor="distance">Location</label>
+          <label htmlFor="distance">Distance</label>
           <input type="text" placeholder='11/Meters' />
         </div>
 
         <div data-aos="fade-right" data-aos-duration="3000" className="priceDiv">
-          <label htmlFor="price">Location</label>
+          <label htmlFor="price">Amount</label>
           <input type="text" placeholder='$140-$500' />
         </div>
         <button data-aos="fade-left" data-aos-duration="2000" className='btn'>
